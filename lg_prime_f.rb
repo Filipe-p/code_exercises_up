@@ -1,7 +1,7 @@
 #Hey! if you are trying to solve this excercise don't read on!!
 
 
-#Note: this is taking for ever! need to refractor and thing of new approach. 
+#Note: is still taking way too long...... 
 
 
 "The prime factors of 13195 are 5, 7, 13 and 29.
@@ -27,7 +27,9 @@ def prime_numbers (number)
 		# build array wity primes
 		if dividable_by.length == 2
 			primes << num
+			puts "prime numbers found: #{primes.length}"
 		end
+
 
 	end
 	primes
@@ -36,17 +38,23 @@ end
 
 
 def largest_prime_factor(number)
-	prime_n = prime_numbers(number)
+	puts "starting ..."
+	number_half = number / 2
+	puts 'loading prime numbers ...'
+	prime_n = prime_numbers(number_half)
+	puts '----loaded prime numbers---'
 	prime_factor_array = []
 
+	counter = 0 
 	prime_n.each do |pn|
-		
+		puts "#{counter} - prime: #{pn}"
 		if number % pn == 0
 			prime_factor_array << pn
+			puts "True - #{pn}"
 		# 	prime_factors << pn
 		 end
 	end
 	p prime_factor_array.last
 end
 
-largest_prime_factor(100000000)
+largest_prime_factor(1000000000)
