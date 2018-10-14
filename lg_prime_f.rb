@@ -7,6 +7,15 @@ What is the largest prime factor of the number XXXXXXXX?"
 
 ## work in progress 
 
+#update: still taking to long to compute. 
+  # option on the table: Use a library of primes, 
+  		#1) start with existing library of primes
+  		#2) from half of the given number start working back with the library of prime numbers
+  		#3) check if a factor of number Given
+  			#once true accept
+
+  #Consideration: I didn't want to use an external librabry but currently out of ideas to reduce computation time... 
+
 #Re-fractoring to decrease time to compute
 #Re-fractoring / Re-code to start finding the LARGEST prime of a number first, and not finding ALL the primes in ascending order.
 
